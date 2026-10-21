@@ -126,16 +126,63 @@
   border-top: 1px solid var(--color-line);
 }
 
+.fila-producto {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 14px;
+}
+
+.fila-texto {
+  min-width: 0;
+}
+
+.miniatura {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  padding: 5px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.miniatura-carrito {
+  width: 48px;
+  height: 48px;
+  flex-basis: 48px;
+  border-radius: 10px;
+}
+
 .fila-nombre {
+  display: -webkit-box;
+  overflow: hidden;
   color: var(--color-ink);
   font-size: 14px;
   font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .fila-detalle {
   margin-top: 5px;
   color: var(--color-muted);
   font-size: 13px;
+}
+
+.fila-subtotal {
+  margin-top: 5px;
+  color: var(--color-brand-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.acciones-fila {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn {
@@ -179,6 +226,29 @@
 .btn-secundario:hover {
   color: #9d3d3d;
   background: #fff0ee;
+}
+
+.btn-disminuir {
+  width: 40px;
+  padding: 0;
+  color: var(--color-brand-dark);
+  background: #eaf3ec;
+  font-size: 20px;
+}
+
+.btn-disminuir:hover {
+  background: #dcecdf;
+}
+
+.estado-api {
+  padding: 18px 0 8px;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.estado-error {
+  color: #a33d3d;
 }
 
 .vacio {
@@ -237,6 +307,14 @@
   .panel {
     padding: 22px 20px;
     border-radius: 18px;
+  }
+
+  .acciones-fila {
+    gap: 6px;
+  }
+
+  .acciones-fila .btn-secundario {
+    padding: 0 12px;
   }
 }
 
