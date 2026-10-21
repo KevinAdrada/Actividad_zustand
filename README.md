@@ -28,3 +28,6 @@ Porque en React y en librerías como Zustand es importante no modificar directam
 
 5. ¿Zustand es parte de React? Explica la diferencia entre una librería propia de React y una del ecosistema.**  
 No, Zustand no hace parte de React. React tiene herramientas propias como `useState` y `useEffect`. En cambio, Zustand es una librería externa que pertenece al ecosistema de React y se puede instalar para manejar estados globales. La diferencia es que una librería propia viene incluida o está desarrollada como parte de React, mientras que una del ecosistema es creada por otros desarrolladores y se puede usar junto con React.
+
+<img width="1908" height="1091" alt="image" src="https://github.com/user-attachments/assets/7f338088-0683-401c-a63d-24d58caf2981" />
+
